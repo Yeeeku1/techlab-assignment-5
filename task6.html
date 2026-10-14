@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TechLab Assignment 5 — Keyboard events" />
+    <title>Task 6 — Keyboard events | TechLab</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="common.js" defer></script>
+    <script src="task6.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">⌘</span>
+        techlab
+        <span class="brand-dot">.</span>
+      </a>
+      <div class="workspace-label">
+        <span class="live-dot"></span>
+        THE JAVASCRIPT WORKSPACE
+      </div>
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-controls="task-navigation"
+        aria-expanded="false"
+      >
+        Explore tasks
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="task-navigation" class="task-navigation" aria-label="Assignment tasks">
+        <p class="nav-group">JavaScript foundations</p>
+        <a href="index.html">
+          <span class="nav-number">00</span>
+          <span>First script</span>
+        </a>
+        <a href="task1.html">
+          <span class="nav-number">01</span>
+          <span>Variables & operators</span>
+        </a>
+        <p class="nav-group">DOM manipulation</p>
+        <a href="task2.html">
+          <span class="nav-number">02</span>
+          <span>Changing content</span>
+        </a>
+        <a href="task3.html">
+          <span class="nav-number">03</span>
+          <span>Changing styles</span>
+        </a>
+        <a href="task4.html">
+          <span class="nav-number">04</span>
+          <span>Add & remove elements</span>
+        </a>
+        <p class="nav-group">Events & interaction</p>
+        <a href="task5.html">
+          <span class="nav-number">05</span>
+          <span>Mouse events</span>
+        </a>
+        <a href="task6.html" class="active" aria-current="page">
+          <span class="nav-number">06</span>
+          <span>Keyboard events</span>
+          <span class="nav-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="task7.html">
+          <span class="nav-number">07</span>
+          <span>Calculator</span>
+        </a>
+        <p class="nav-group">Mini project</p>
+        <a href="task8.html">
+          <span class="nav-number">08</span>
+          <span>To-do workspace</span>
+        </a>
+      </nav>
+      <div class="student-card">
+        <span class="avatar">YD</span>
+        <div>
+          <strong>Yerasyl Dauyl</strong>
+          <span>SE-2527 · Student workspace</span>
+        </div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <span>
+          Workspace
+          <span class="breadcrumb-slash">/</span>
+          Assignment 05
+        </span>
+        <span class="course-tag">
+          <span class="live-dot"></span>
+          WEB TECHNOLOGIES
+        </span>
+      </header>
+      <main id="main">
+        <div class="page-heading">
+          <p class="eyebrow">
+            EVENTS & INTERACTION
+            <span>/</span>
+            EXPERIMENT 06
+          </p>
+          <h1>
+            Keyboard events
+            <span>.</span>
+          </h1>
+          <p>From your keyboard to the screen. See your input update as you type.</p>
+        </div>
+        <div class="lab-layout">
+          <section class="experiment-card" aria-labelledby="experiment-title">
+            <div class="card-header">
+              <div>
+                <span class="experiment-marker">06</span>
+                <h2 id="experiment-title">Interactive playground</h2>
+              </div>
+              <span class="ready-label">
+                <span class="live-dot"></span>
+                LIVE
+              </span>
+            </div>
+            <div class="panel-body">
+              <label class="field-label" for="live-input">Your lab note</label>
+              <input
+                id="live-input"
+                type="text"
+                maxlength="200"
+                autocomplete="off"
+                placeholder="Type an idea, a thought, a hello…"
+                aria-describedby="input-help"
+              />
+              <p id="input-help" class="helper">
+                Up to 200 characters. Your text appears below as you type.
+              </p>
+              <div class="live-preview">
+                <div class="list-heading">
+                  <span class="small-label">LIVE OUTPUT</span>
+                  <span id="character-count" class="count-badge">0 / 200</span>
+                </div>
+                <p id="live-output" aria-live="polite">Your words will appear here.</p>
+              </div>
+              <p id="keyboard-status" class="status" role="status">
+                Waiting for your first keystroke.
+              </p>
+            </div>
+          </section>
+          <aside class="guide-card">
+            <span class="guide-icon" aria-hidden="true">↗</span>
+            <p class="eyebrow">LAB NOTES</p>
+            <h2>Ideas in real time.</h2>
+            <p>
+              The keyup event reads the current value after a key is released. The input
+              event also supports pasting, mobile keyboards, and clearing.
+            </p>
+            <div class="concept-box">
+              <span class="small-label">IN THIS EXPERIMENT</span>
+              <code>keyup · input</code>
+            </div>
+            <div class="step-label">
+              <span>EXPERIMENT 7 OF 9</span>
+              <span>78%</span>
+            </div>
+            <div class="progress-track">
+              <span style="width: 77.77777777777779%"></span>
+            </div>
+          </aside>
+        </div>
+        <div class="page-navigation">
+          <a href="task5.html">← Previous experiment</a>
+          <a href="task7.html">Next: Calculator →</a>
+        </div>
+        <footer>
+          <span>TechLab · Learn by making.</span>
+          <span>Yerasyl Dauyl / SE-2527 / Assignment 5</span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
